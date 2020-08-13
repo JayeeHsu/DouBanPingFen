@@ -1,0 +1,78 @@
+/* pages/details/details.wxss */
+@import "/pages/templates/stars-template/stars-template";
+.details-header {
+  display: flex;
+  padding: 20rpx;
+}
+
+.header-img {
+  width: 230rpx;
+  height: 330rpx;
+}
+
+.header-content {
+  padding-left: 20rpx;
+}
+
+.content-name {
+   font-size:50rpx;
+  font-weight: bold; 
+  width: 500rpx;
+}
+
+.content-discription {
+margin-top:40rpx;
+flex-wrap: wrap;
+font-size: 28rpx;
+color: #ccc;
+display: flex;
+}
+.rating{
+  padding: 20rpx;
+}
+
+.rating-title{
+font-size: 36rpx;
+font-weight: bold;
+}
+.rating-average{
+  text-align: center;
+  font-size: 32rpx;
+}
+.rating-stars{
+  display: flex;
+  justify-content: center;
+}
+
+.main{
+  padding: 20rpx;
+}
+.main-title{
+  font-size: 42rpx;
+  margin-bottom: 20rpx;
+}
+.main-content{
+  font-size: 28rpx;
+}
+
+.per-title{
+  padding:20rpx;
+  font-size:42rpx;
+  margin-bottom:20rpx;
+}
+.per-content{
+  display: flex;
+}
+.per-list{
+  width:200rpx;
+  padding: 20rpx;
+}
+.per-list image{
+  border-radius: 10rpx;
+  width:200rpx;
+  height: 300rpx;
+}
+.per-list view{
+  font-size:32rpx;
+  text-align: center;
+}

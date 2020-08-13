@@ -1,0 +1,22 @@
+<!--pages/templates/stars-template/stars-template.wxml-->
+<template name="stars">
+<view
+class="stars"
+wx:for="{{[1,2,3,4,5]}}"
+wx:key="index"
+wx:for-item='i'
+>
+<!--因为从home传过来的data的key是item，所以这里用wx:for-item='i'把循环的item改为i避免冲突-->
+<image src="/img/star_fill_whole.png"
+wx:if="{{item.rating.average >= i*2-0.5}}"
+></image>
+
+<image src="/img/star_fill_half.png"
+wx:elif="{{i*2-item.rating.average<=1}}"
+></image>
+
+<image src="/img/star_fill_none.png"
+wx:else
+></image>
+</view>
+</template>
