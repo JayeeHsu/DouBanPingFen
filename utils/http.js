@@ -8,8 +8,7 @@ wx.request(
   }
 )
 }
-
-function requestMove(url,key,title,callBack) {
+function requestMovies(url,key,title,callBack) {
   wx.request({
     url: url,
     success(res){
@@ -21,5 +20,5 @@ function requestMove(url,key,title,callBack) {
 
 module.exports ={
   request,
-  requestMove,
+  requestMovies,
 }

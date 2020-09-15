@@ -21,7 +21,7 @@
 		<scroll-view scroll-x="true">
 			<view class="list-img">
 				<view class="img-item" 
-				wx:for="{{item.move.subjects}}" 
+				wx:for="{{item.movies.subjects}}" 
 				wx:key="index"
 				bind:tap="toDetails"
 				data-id="{{item.id}}"

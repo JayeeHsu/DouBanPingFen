@@ -38,16 +38,16 @@ Page({
     let theaters = global.theaters;
     let top250 = global.top250;
     
-    http.requestMove(url + coming + "?start=0&count=10",'coming','影院热映',this.getHttp);
+    http.requestMovies(url + coming + "?start=0&count=10",'coming','影院热映',this.getHttp);
 
-    http.requestMove(url + theaters + "?start=0&count=10",'theaters','热门',this.getHttp);
+    http.requestMovies(url + theaters + "?start=0&count=10",'theaters','热门',this.getHttp);
 
-    http.requestMove(url + top250 + "?start=0&count=10",'top250','排行榜',this.getHttp);
+    http.requestMovies(url + top250 + "?start=0&count=10",'top250','排行榜',this.getHttp);
   },
   getHttp(res,key,title) {
     this.data.list[key]={
       title:title,
-      move:res
+      movies:res
     }
     console.log(this.data.list);
     this.setData(
